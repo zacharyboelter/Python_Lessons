@@ -1,42 +1,39 @@
+#Project 4a
+#Zachary Boelter
+
 import tkinter as tk
 
 root = tk.Tk()
-root.configure(background="lightgrey")
+root.configure(background="darkgrey")
 root.title("New Employee Entry")
 root.geometry("500x600")
 
 #Labels
-lbl_first = tk.Label(root, text="First Name", bg="lightgrey")
-lbl_last = tk.Label(root, text="Last Name", bg="lightgrey")
-lbl_address = tk.Label(root, text="Address", bg="lightgrey")
-lbl_city = tk.Label(root, text="City", bg="lightgrey")
-lbl_state = tk.Label(root, text="State", bg="lightgrey")
-lbl_zip = tk.Label(root, text="Zip", bg="lightgrey")
-lbl_phone = tk.Label(root, text="Phone Number", bg="lightgrey")
-lbl_rate = tk.Label(root, text="Hourly Rate", bg="lightgrey")
-lbl_hours = tk.Label(root, text="Normal Hours", bg="lightgrey")
+lbl_first = tk.Label(root, text="First Name", bg="darkgrey", fg="white")
+lbl_last = tk.Label(root, text="Last Name", bg="darkgrey", fg="white")
+lbl_address = tk.Label(root, text="Address", bg="darkgrey", fg="white")
+lbl_city = tk.Label(root, text="City", bg="darkgrey", fg="white")
+lbl_state = tk.Label(root, text="State", bg="darkgrey", fg="white")
+lbl_zip = tk.Label(root, text="Zip", bg="darkgrey", fg="white")
+lbl_phone = tk.Label(root, text="Phone Number", bg="darkgrey", fg="white")
+lbl_rate = tk.Label(root, text="Hourly Rate", bg="darkgrey", fg="white")
+lbl_hours = tk.Label(root, text="Normal Hours", bg="darkgrey", fg="white")
 
 #Entry Boxes
-ent_first = tk.Entry(root)
-ent_last = tk.Entry(root)
-ent_address = tk.Entry(root)
-ent_city = tk.Entry(root)
-ent_state = tk.Entry(root)
-ent_zip = tk.Entry(root)
-ent_phone = tk.Entry(root)
-ent_rate = tk.Entry(root)
-ent_hours = tk.Entry(root)
+ent_first = tk.Entry(root, bg="white")
+ent_last = tk.Entry(root, bg="white")
+ent_address = tk.Entry(root, bg="white")
+ent_city = tk.Entry(root, bg="white")
+ent_state = tk.Entry(root, bg="white")
+ent_zip = tk.Entry(root, bg="white")
+ent_phone = tk.Entry(root, bg="white")
+ent_rate = tk.Entry(root, bg="white")
+ent_hours = tk.Entry(root, bg="white")
 
 #Buttons
-btnSave = tk.Button(root, text="Save", fg="blue", width=8)
-btnClear = tk.Button(root, text="Clear", fg="blue", width=8)
-btnClose = tk.Button(root, text="Close", fg="blue", width=8)
-
-#Layout Constants
-LX = 30   # Label X
-EX = 180  # Entry X
-Y_START = 40
-Y_STEP = 35
+btnSave = tk.Button(root, text="Save", fg="blue", width=6)
+btnClear = tk.Button(root, text="Clear", fg="blue", width=6)
+btnClose = tk.Button(root, text="Close", fg="blue", width=6)
 
 #Row 1: First Name
 lbl_first.place(x=40, y=50)
@@ -75,8 +72,8 @@ lbl_hours.place(x=40, y=330)
 ent_hours.place(x=200, y=330)
 
 #Buttons
-btnSave.place(x=100, y=450)
+btnSave.place(x=70, y=450)
 btnClear.place(x=200, y=450)
-btnClose.place(x=300, y=450)
+btnClose.place(x=330, y=450)
 
 root.mainloop()
