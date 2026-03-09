@@ -1,0 +1,15 @@
+# Week 5 Project 5
+# Zachary Boelter
+
+print('Grocery List Program')
+print('Type "exit" to quit\n\n')
+
+grocery_list = []
+user_input = ''
+while user_input.lower() != 'exit':
+    user_input = input('Enter next item to purchase, type "exit" to finish: ')
+    if user_input.lower() != 'exit':
+       if user_input not in grocery_list:
+           grocery_list.append(user_input)
+print(f'\nMy list contains {len(grocery_list)} items.\n')
+
