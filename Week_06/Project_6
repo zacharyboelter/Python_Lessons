@@ -48,6 +48,6 @@ if delete.lower() == 'yes':
     delete_id = input('Enter ID to delete: ')
     if delete_id in students:
         del students[delete_id]
-        
-    display_students(students)
+        display_students(students)
+    
 
