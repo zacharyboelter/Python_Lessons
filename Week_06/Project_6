@@ -5,3 +5,49 @@ print('Student Update Program\n\n')
 
 students = {}
 
+while True:
+    student_id = input('Enter student ID (or "exit" to finish): ')
+    if student_id.lower() == 'exit':
+        break
+    student_name = input('Enter student name: ')
+    students[student_id] = student_name
+
+#display function
+def display_students(students):
+    print(f'\nMy student database contains {len(students)} students.\n')
+
+    for student_id, student_name in students.items():
+        print(f'{student_id} {student_name}')
+
+#show students
+display_students(students)
+
+# modify student
+modify = input('\nDo you wish to modify a student? (yes/no): ')
+if modify.lower() == 'yes':
+    student_id = input('Enter ID to modify: ')
+    new_name = input('Enter new name: ')
+
+    students[student_id] = new_name
+
+    display_students(students)
+
+# add student
+add = input('\nDo you wish to add a new student? (yes/no): ')
+if add.lower() == 'yes':
+    student_id = input('Enter new student ID: ')
+    student_name = input('Enter new student name: ')
+
+    students[student_id] = student_name
+
+    display_students(students)
+
+# delete student
+delete = input('\nDo you wish to delete a student? (yes/no): ')
+if delete.lower() == 'yes':
+    delete_id = input('Enter ID to delete: ')
+    if delete_id in students:
+        del students[delete_id]
+        
+    display_students(students)
+
