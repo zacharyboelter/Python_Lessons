@@ -4,9 +4,9 @@
 # 1
 def GetStudentData(StudentID):
 
-    StudentName = input("Enter student name: ")
-    GPA = input("Enter GPA: ")
-    Major = input("Enter major: ")
+    StudentName = input(f"Enter name for student {StudentID}: ")
+    GPA = input(f"Enter GPA for student {StudentID}: ")
+    Major = input(f"Enter major for student {StudentID}: ")
 
     return StudentName, GPA, Major
 
